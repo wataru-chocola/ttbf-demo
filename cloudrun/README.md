@@ -14,10 +14,14 @@ $ npm run build
 $ npm run start
 ```
 
-## Build image
+## Build and Upload image
 
-t.b.d
+```
+$ gcloud builds submit --tag <url>
+```
 
 ## Deploy image on Cloud Run
 
-t.b.d
+```
+$ gcloud run deploy <service> --image <url> --region <region>
+```
