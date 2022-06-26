@@ -1,5 +1,6 @@
 import http from "http";
 
+const HOST = "0.0.0.0";
 const PORT = 8002;
 
 http
@@ -15,5 +16,5 @@ http
       res.end("Not found");
     }
   })
-  .listen(PORT);
-console.log(`running at http://localhost:${PORT}`);
+  .listen(PORT, HOST);
+console.log(`running at http://${HOST}:${PORT}`);
