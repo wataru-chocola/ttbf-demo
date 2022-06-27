@@ -1,7 +1,7 @@
 import http from "http";
 
 const HOST = "0.0.0.0";
-const PORT = 8002;
+const PORT = Number(process.env.PORT) || 8002;
 
 http
   .createServer((req, res) => {

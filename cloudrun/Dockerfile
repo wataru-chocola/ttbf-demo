@@ -12,6 +12,8 @@ RUN npm run build
 
 FROM node:18
 
+ARG PORT="8002"
+ENV PORT=${PORT}
 WORKDIR /usr/src/app
 
 COPY package*.json ./
@@ -20,5 +22,5 @@ COPY --from=ts-builder /build/src ./src
 
 RUN npm install --production
 
-EXPOSE 8002
+EXPOSE ${PORT}
 CMD ["npm", "run", "start"]
