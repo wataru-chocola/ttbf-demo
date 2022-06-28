@@ -1,4 +1,4 @@
-# ttbf-demo for cf-workers
+# ttfb-demo for cf-workers
 
 Simple SSR server to run on Cloudflare Workers.
 

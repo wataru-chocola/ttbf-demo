@@ -1,4 +1,4 @@
-# ttbf-demo for cloudrun
+# ttfb-demo for cloudrun
 
 Simple SSR server to run on Cloud Run.
 
